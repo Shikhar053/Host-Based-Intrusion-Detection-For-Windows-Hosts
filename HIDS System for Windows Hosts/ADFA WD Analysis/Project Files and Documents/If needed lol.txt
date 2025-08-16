@@ -1,0 +1,120 @@
+Now try to understand my situation:
+1. We have made R&D research paper,we are 3 in group, each basically working on a particular dataset of ADFA(1-ADFA LD,me-ADFA-WD,other-ADFA-WD:SAA).
+2. I have put in a research paper for you to see: you may realize that the methodology is just..GENERAL SHIT..
+3. Now i am working on ADFA WD like i said, and i have a methodology ready, but the problem is...NO RESULT IS THERE as i haven't Implemented the methodology at all
+4. All of this was going fine until suddenly, the professor decided to wake up one day and give the deadline for COMPLETE RESEARCH PAPER(with FULL IMPLEMENTATION) to be 4th April 2025, today is 2nd April 2025
+5.Now i have a methodology ready for adfa wd implementation as an idea only, no implementation again
+6.What do we do now? Should we like...Make up the Methodology and Results and Conclusion...or should i add my own methodology and Fake the results...since obviously nothing implementing can happen in 2 days.
+7. now, first off, Professor will look at our paper i guess and then will send it for conference probably, now we are hoping that our paper doesn't get selected, because then we would have to face the conference and I DONT WANNA DO THAT..I am not even THAT DEEP INTERESTED IN RESEARCH AND DEVELOPMENT LOL...especially in this field. Not to forget, my team and our TEAMWORK..SUCKS..!!!
+8. But We have to like show something in the Reporting and Presentation and Future Work Section, Otherwise Professor will get very angry and i dont want to see his wrath
+WHAT TO DO IN THIS SITUATION? SHOULD I FAKE IT??? IF YES..HOW???
+
+
+I think i know what you can do in this situation, How about
+1. You Read my Research Paper And Then Ill give you my methodology ( it is comprised of mostly replicating one paper's methodology but with some part of other paper as well...which was actually taken from ADFA LD Research work..but ofc...machine learning and nlp techniques work same right?)>..
+2. then you can use the methodology and come up with the Reporting and Presentation as well as Future Work Section SPECIFICALLY FOR ADFA WD set.. ( probably we would also have to change the Data Analysis Column of Paper a bit..cuz thats where the actual like...PROCEDURE/METHODOLOGY is written..) we might want to divide the Data Analysis,Reporting and Presentation and Future Work Sections into Sub sections of ADFA-LD, ADFA-WD and ADFA-WD:SAA...
+
+Is this the correct idea?
+
+So, Here is My Methodology
+1. From the Paper Early Detection of Host-based Intrusions in Linux
+EnvironmentXinrun Zhang∗, Quamar Niyaz∗, Farha Jahan†, Weiqing Sun† : we attempt to build a HIDS that processes the first
+few hundred of system calls to make a decision for an
+application whether an intrusion has happened. To do so,
+we introduce a system call selection module to select a
+number of system calls from the application trace file,
+say 100, 200, 300, 400, or 500 before passing it into the
+N-gram model. ( MY UNDERSTANDING: IN OTHER WORDS, SELECT FIRST N(N=100,200,300,400,500) Dll Calls from the traces and then go for the methodology of second research paper)
+2. Methodology of Second Research Paper: Development of Various Stacking
+Ensemble Based HIDS Using ADFA
+Datasets
+HAMi SATILMIS¸, SEDAT AKLEYLEK2,  AND ZALiHA YU¨ CE TOK4
+Which is Big so let me Do it after this message, till then...remember all this and what you have to do
+
+Methodology continued
+2. Methodology of Second Research Paper: Development of Various Stacking
+Ensemble Based HIDS Using ADFA
+Datasets
+HAMi SATILMIS¸, SEDAT AKLEYLEK2,  AND ZALiHA YU¨ CE TOK4
+Steps:
+1. Application of N-Gram Method:For example, Figure 3 illustrates the process of identifying
+n-grams for two system call sequences of varying lengths,
+similar to those found in ADFA-LD. Figure 4 displays a
+small portion of the n-grams and their counts obtained after
+applying the n-gram identification process to system call
+sequences in ADFA-LD. Additionally, Figure 5 presents
+the n-grams obtained after applying the process outlined in
+Figure 3 to three DLL call sequences of different lengths,
+similar to those in ADFA-WD.
+In the operation conducted on the ADFA datasets with
+an n value of 5, 80,526 unique 5-grams are obtained from
+the system call sequences in ADFA-LD. Similarly, 40,752
+unique 5-grams are identified from the 4,399 DLL call
+sequences in ADFA-WD.
+After identifying the 5-grams from the call sequences in
+the datasets, each 5-gram is assigned a numerical label. For
+example, ”N-gram 1” represents the first 5-gram. Following
+the labeling process, 5-gram datasets are created, where each
+5-gram is treated as a feature. In these 5-gram datasets,
+the value of each 5-gram for a particular call sequence
+corresponds to its frequency within that sequence. As a
+result, two 5-gram datasets corresponding to the ADFA
+datasets are obtained. An example of a 5-gram dataset,
+constructed from the n-grams shown in Figure 3, is presented
+in Figure 6 ( try to understand it please)
+2.Application of BoW Methods ( i will only use Standard BoW method as it gave the best RECALL as per the PAPER)
+The standard BoW method calculates the frequency of words
+within text datasets. Initially, it identifies the unique words
+in the texts. Each unique word is considered a feature. The
+values of these features correspond to the frequency of the
+words within the text. Thus, texts are represented by the
+unique words they contain and the frequency values of those
+words.
+When the standard BoW method is applied to 5-gram
+datasets, each 5-gram is treated as a word. The value of each
+5-gram is calculated similarly to the frequency of unique
+words within a text. In the 5-gram datasets, the repetition
+counts of 5-grams within the call sequences are recorded.
+These repetition counts represent the frequency values of
+the 5-grams within the call sequences. Therefore, the 5-gram
+datasets serve as the standard BoW method applied to them.
+In other words, the 5-gram datasets derived from the ADFA
+datasets are identical to the standard BoW datasets.
+3. Feature Selection ( Using Algorithm Given by Paper)
+According to Algorithm 1, the first step involves calculating
+the MI values of the features in the datasets. Subsequently,
+features are clustered into two groups based on their
+MI values using the k-means algorithm. One group contains
+features with low MI values, while the other comprises
+features with high MI values. Only the features from the
+cluster with high MI values are utilized during model development
+and evaluation. The statistical information regarding
+the features obtained and used after the feature selection
+process is provided in Tables 5 and 6.
+Algorithm 1 Feature selection algorithm
+Input: BoW dataset
+Output: BoW dataset with selected features and reduced
+dimensionality
+1: k = 2  , k is the cluster number
+2: Calculating MI values of features
+3: k-means(k, MI values along with the indexes of the
+features)
+4: Selecting features in the set containing large MI values
+according to their indexes
+5: return BoW dataset with selected features and reduced
+dimensionality
+4. Model Training:
+For model training, 75% of the data from the BoW
+datasets is utilized, while the remaining 25% is used for
+performance evaluation. The process of developing models
+using BoW datasets derived from 5-gram datasets is
+summarized in Figure 11. Individual models are developed,
+including KNN, DT, LR, and RF. Following this, ensemble
+models such as XGBoost and AdaBoost, which combine the
+outputs of the individual models, are created, resulting in
+stacking ensemble models. As a result, stacking ensemble
+based HIDSs are being developed.
+5. Evaluation of each model Used in training and comparing recall values of first 100,200,..500 sequences( remember the Last Step?)
+REmember all this and then wait for the next instruction
+
+Here is Our Paper, Now if you read it carefully, it has a lot of errors, regardless...MY FOCUS AND THE METHODOLOGY I GAVE WAS ONLY FOR ADFA-WD DATASET...now i want a solid Reporting and presentation and conclusion and future work which i can use and just show the results that i showed earlier. make sure the content is similar to the one being written in the paper..and if possible add a table in reporting and where there are 3 columns:Model, N value(100,200..500),Recall Value

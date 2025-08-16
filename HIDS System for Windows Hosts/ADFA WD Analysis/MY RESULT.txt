@@ -1,0 +1,138 @@
+MY RESULT:
+Running Stacking Ensemble on Combined Feature Set...
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8603    0.7846    0.8207      2182
+      Attack     0.8020    0.8726    0.8358      2182
+
+    accuracy                         0.8286      4364
+   macro avg     0.8312    0.8286    0.8283      4364
+weighted avg     0.8312    0.8286    0.8283      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8781    0.7993    0.8369      2182
+      Attack     0.8158    0.8891    0.8509      2182
+
+    accuracy                         0.8442      4364
+   macro avg     0.8470    0.8442    0.8439      4364
+weighted avg     0.8470    0.8442    0.8439      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8885    0.8107    0.8478      2182
+      Attack     0.8260    0.8983    0.8606      2182
+
+    accuracy                         0.8545      4364
+   macro avg     0.8572    0.8545    0.8542      4364
+weighted avg     0.8572    0.8545    0.8542      4364
+
+
+
+===== STACKING META MODEL RESULTS (All Variants) =====
+
+=== Meta Model: XGBoost_default ===
+              precision    recall  f1-score   support
+
+      Normal     0.9423    0.8533    0.8956      2182
+      Attack     0.8660    0.9478    0.9050      2182
+
+    accuracy                         0.9005      4364
+   macro avg     0.9042    0.9005    0.9003      4364
+weighted avg     0.9042    0.9005    0.9003      4364
+
+
+=== Meta Model: XGBoost_tuned ===
+              precision    recall  f1-score   support
+
+      Normal     0.9272    0.8341    0.8782      2182
+      Attack     0.8492    0.9345    0.8898      2182
+
+    accuracy                         0.8843      4364
+   macro avg     0.8882    0.8843    0.8840      4364
+weighted avg     0.8882    0.8843    0.8840      4364
+
+
+=== Meta Model: AdaBoost_default ===
+              precision    recall  f1-score   support
+
+      Normal     0.9105    0.8061    0.8551      2182
+      Attack     0.8261    0.9207    0.8708      2182
+
+    accuracy                         0.8634      4364
+   macro avg     0.8683    0.8634    0.8630      4364
+weighted avg     0.8683    0.8634    0.8630      4364
+
+
+=== Meta Model: AdaBoost_tuned ===
+              precision    recall  f1-score   support
+
+      Normal     0.9091    0.8112    0.8574      2182
+      Attack     0.8295    0.9189    0.8719      2182
+
+    accuracy                         0.8650      4364
+   macro avg     0.8693    0.8650    0.8646      4364
+weighted avg     0.8693    0.8650    0.8646      4364
+
+
+=== Meta Model: LightGBM_default ===
+              precision    recall  f1-score   support
+
+      Normal     0.9268    0.8355    0.8788      2182
+      Attack     0.8502    0.9340    0.8902      2182
+
+    accuracy                         0.8847      4364
+   macro avg     0.8885    0.8847    0.8845      4364
+weighted avg     0.8885    0.8847    0.8845      4364
+
+
+=== Meta Model: LightGBM_tuned ===
+              precision    recall  f1-score   support
+
+      Normal     0.9295    0.8341    0.8792      2182
+      Attack     0.8495    0.9368    0.8910      2182
+
+    accuracy                         0.8854      4364
+   macro avg     0.8895    0.8854    0.8851      4364
+weighted avg     0.8895    0.8854    0.8851      4364
+
+
+
+===== AVERAGED META MODEL SCORES =====
+XGBoost_default: Precision=0.8661, Recall=0.9478, F1=0.9051, Accuracy=0.9005
+XGBoost_tuned: Precision=0.8493, Recall=0.9345, F1=0.8898, Accuracy=0.8843
+AdaBoost_default: Precision=0.8261, Recall=0.9207, F1=0.8708, Accuracy=0.8634
+AdaBoost_tuned: Precision=0.8296, Recall=0.9189, F1=0.8719, Accuracy=0.8650
+LightGBM_default: Precision=0.8502, Recall=0.9340, F1=0.8901, Accuracy=0.8847
+LightGBM_tuned: Precision=0.8495, Recall=0.9368, F1=0.8910, Accuracy=0.8854
+
+SATIMS NO FS RESULT:
+TF-IDF BoW Dataset
+Model PRC REC F1 FPR ACC Training Time (s) Testing Time (s)
+KNN 0.8162 0.9149 0.8627 0.1909 0.8600 0.0944 12.8929
+DT 0.8305 0.9357 0.8799 0.1769 0.8773 15.6639 0.1659
+LR 0.7933 0.9357 0.8586 0.2259 0.8518 191.2385 0.0739
+RF 0.8481 0.9395 0.8915 0.1559 0.8900 41.9776 0.1714
+XGBoost 0.8613 0.9509 0.9039 0.1419 0.9027 233.4370 11.6364
+AdaBoost 0.8654 0.9357 0.8992 0.1349 0.8991 234.4141 16.2237
+SATIMS FS RESULT
+TF-IDF BoW Dataset
+Model PRC REC F1 FPR ACC Training Time (s) Testing Time (s)
+KNN 0.7915 0.9112 0.8471 0.2224 0.8418 0.0029 0.1675
+DT 0.7763 0.9055 0.8359 0.2417 0.8291 0.3071 0.0015
+LR 0.6792 0.9527 0.7931 0.4169 0.7609 0.6387 0.0046
+RF 0.7823 0.9168 0.8442 0.2364 0.8373 1.7399 0.0255
+XGBoost 0.7908 0.9433 0.8603 0.2312 0.8527 5.9861 0.5476
+AdaBoost 0.7993 0.8809 0.8381 0.2049 0.8364 3.0592 0.2598
+
+
+adjust the code/values to Compare the precision,recall,f1,accuracy of mine now...along with satims no fs and basants two papers...let the graph limit and all be same

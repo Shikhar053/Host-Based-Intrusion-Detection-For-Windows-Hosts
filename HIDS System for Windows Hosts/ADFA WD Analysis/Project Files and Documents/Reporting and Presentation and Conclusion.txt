@@ -1,0 +1,72 @@
+- Key Observations:
+
+Trade-off Between Class 0 and Class 1 Recall:
+
+The models demonstrated a consistent trade-off between recall for Class 0 (normal activity) and recall for Class 1 (attack/intrusion).
+
+While most models could achieve high recall for Class 1, it often came at the cost of lower recall for Class 0, indicating a tendency to misclassify normal activity as suspicious (i.e., higher false positive rates).
+
+Optimal Sequence Length:
+
+Evaluation suggests that increasing the sequence length can improve the Class 1 recall metric up to a certain limit.
+
+Performance trends indicate an optimal range of sequence length (N) around 400 for most models.
+
+Beyond this limit, increasing the sequence length leads to degraded performance due to noise.
+
+Effectiveness of BoW and Mutual Information:
+
+Standard BoW-based feature extraction datasets can effectively capture crucial patterns in DLL call sequences for intrusion detection.
+
+Mutual Information-based feature selection causes only the most relevant 5-grams to be retained.
+
+Recall (Class 1/Attack) by Model and N Value
+
+Model	N = 100	N = 200	N = 300	N = 400	N = 500
+KNN	0.953	0.963	0.965	0.922	0.329
+Decision Tree	0.953	0.965	0.965	0.899	0.953
+Logistic Regression	0.942	0.949	0.951	0.959	0.949
+Random Forest	0.953	0.965	0.965	0.924	0.953
+XGBoost	0.953	0.965	0.965	0.926	0.953
+AdaBoost	0.922	0.817	0.922	0.928	0.926
+- Expected Performance:
+
+Deviation from Expected Recall Metric:
+
+As observed from the past literature and similar methodologies, we expected a Class 1 recall metric performance lying in the range of 80-84.
+
+However, our results surpassed this range, indicating the effectiveness of our approach. For the Random Forest/XGBoost models with N=100/200/300 a Recall value of 0.953/0.965 may be obtained.
+
+The impact of feature selection might lead to stabilized results, though minor fluctuations can occur in overall results.
+
+Conclusion and Future Work
+
+- Summary of Findings:
+
+The combination of 5-gram Standard BoW feature extraction and MI-based selection for preprocessing the ADFA-WD Dataset was intended to provide a stable host intrusion detection framework for an effective Host-Based Intrusion Detection System for Windows.
+
+Our approach, using the previously validated methodologies and parameters, was expected to result in a consistent Class 1 (Attack) recall performance, similar to what was recorded in past methodologies KNN(0.9781), DT(0.9563), LR(0.9781), RF(0.9781), XGBoost(0.9727), AdaBoost(0.9727).
+
+- Limitations:
+
+Performance Discrepancy: The Class 1 (Attack) recall performance falls short of expectations based on similar methodologies. This suggests there may be issues with the experimental setup, feature extraction, or model selection.
+
+Class Imbalance: The ADFA-WD dataset exhibits a class imbalance, with potentially affecting the HIDS ability to appropriately function for each situation/class.
+
+Limited Generalizability: The reliance on a specific dataset (ADFA-WD) may limit the generalizability of the findings to other, more diverse datasets or real-world environments.
+
+- Future Work:
+
+Addressing Performance Discrepancies: This may include refining the preprocessing steps, optimizing model hyperparameters, or exploring alternative machine learning algorithms that are better suited to this data.
+
+Evaluate Feature Extraction Methodology: Further evaluation of the feature extraction methodology can be conducted by using deep learning models for a potential improvement
+
+Refining in the Feature Selection: Potential refining in the Feature Selection using alternative clustering methods than just k-means.
+
+Class Imbalance: This would entail adjusting class weights during model training, oversampling the minority class, or undersampling the majority class.
+
+Evaluation on Diverse Datasets: To ensure the generalizability of the findings, it is essential to evaluate the proposed approach on more diverse and real-world datasets.
+
+
+
+

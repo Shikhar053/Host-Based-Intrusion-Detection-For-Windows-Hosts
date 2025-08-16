@@ -1,0 +1,1287 @@
+===== Running for N = 100 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.7526    0.7483    0.7505      2118
+      Attack     0.7498    0.7540    0.7519      2118
+
+    accuracy                         0.7512      4236
+   macro avg     0.7512    0.7512    0.7512      4236
+weighted avg     0.7512    0.7512    0.7512      4236
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8635    0.6988    0.7724      2118
+      Attack     0.7470    0.8895    0.8121      2118
+
+    accuracy                         0.7941      4236
+   macro avg     0.8053    0.7941    0.7923      4236
+weighted avg     0.8053    0.7941    0.7923      4236
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.7881    0.5302    0.6339      2118
+      Attack     0.6460    0.8574    0.7369      2118
+
+    accuracy                         0.6938      4236
+   macro avg     0.7171    0.6938    0.6854      4236
+weighted avg     0.7171    0.6938    0.6854      4236
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8873    0.6950    0.7795      2118
+      Attack     0.7493    0.9117    0.8226      2118
+
+    accuracy                         0.8034      4236
+   macro avg     0.8183    0.8034    0.8010      4236
+weighted avg     0.8183    0.8034    0.8010      4236
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8925    0.6936    0.7806      2118
+      Attack     0.7494    0.9164    0.8246      2118
+
+    accuracy                         0.8050      4236
+   macro avg     0.8209    0.8050    0.8026      4236
+weighted avg     0.8209    0.8050    0.8026      4236
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8858    0.6959    0.7795      2118
+      Attack     0.7496    0.9103    0.8222      2118
+
+    accuracy                         0.8031      4236
+   macro avg     0.8177    0.8031    0.8008      4236
+weighted avg     0.8177    0.8031    0.8008      4236
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8925    0.6936    0.7806      2118
+      Attack     0.7494    0.9164    0.8246      2118
+
+    accuracy                         0.8050      4236
+   macro avg     0.8209    0.8050    0.8026      4236
+weighted avg     0.8209    0.8050    0.8026      4236
+
+
+
+===== Running for N = 200 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.7462    0.7748    0.7603      2118
+      Attack     0.7658    0.7365    0.7509      2118
+
+    accuracy                         0.7557      4236
+   macro avg     0.7560    0.7557    0.7556      4236
+weighted avg     0.7560    0.7557    0.7556      4236
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8852    0.7280    0.7990      2118
+      Attack     0.7690    0.9056    0.8317      2118
+
+    accuracy                         0.8168      4236
+   macro avg     0.8271    0.8168    0.8154      4236
+weighted avg     0.8271    0.8168    0.8154      4236
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.7656    0.5567    0.6446      2118
+      Attack     0.6517    0.8296    0.7300      2118
+
+    accuracy                         0.6931      4236
+   macro avg     0.7086    0.6931    0.6873      4236
+weighted avg     0.7086    0.6931    0.6873      4236
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.9010    0.7219    0.8016      2118
+      Attack     0.7680    0.9207    0.8374      2118
+
+    accuracy                         0.8213      4236
+   macro avg     0.8345    0.8213    0.8195      4236
+weighted avg     0.8345    0.8213    0.8195      4236
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9025    0.7257    0.8045      2118
+      Attack     0.7706    0.9216    0.8394      2118
+
+    accuracy                         0.8237      4236
+   macro avg     0.8366    0.8237    0.8219      4236
+weighted avg     0.8366    0.8237    0.8219      4236
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8974    0.7271    0.8033      2118
+      Attack     0.7706    0.9169    0.8374      2118
+
+    accuracy                         0.8220      4236
+   macro avg     0.8340    0.8220    0.8204      4236
+weighted avg     0.8340    0.8220    0.8204      4236
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.9071    0.7191    0.8022      2118
+      Attack     0.7673    0.9263    0.8394      2118
+
+    accuracy                         0.8227      4236
+   macro avg     0.8372    0.8227    0.8208      4236
+weighted avg     0.8372    0.8227    0.8208      4236
+
+
+
+===== Running for N = 300 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.7740    0.7842    0.7791      2118
+      Attack     0.7813    0.7710    0.7761      2118
+
+    accuracy                         0.7776      4236
+   macro avg     0.7777    0.7776    0.7776      4236
+weighted avg     0.7777    0.7776    0.7776      4236
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8834    0.7370    0.8036      2118
+      Attack     0.7744    0.9027    0.8337      2118
+
+    accuracy                         0.8199      4236
+   macro avg     0.8289    0.8199    0.8186      4236
+weighted avg     0.8289    0.8199    0.8186      4236
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.7661    0.5567    0.6448      2118
+      Attack     0.6518    0.8300    0.7302      2118
+
+    accuracy                         0.6933      4236
+   macro avg     0.7090    0.6933    0.6875      4236
+weighted avg     0.7090    0.6933    0.6875      4236
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.9007    0.7365    0.8104      2118
+      Attack     0.7772    0.9188    0.8421      2118
+
+    accuracy                         0.8277      4236
+   macro avg     0.8389    0.8277    0.8262      4236
+weighted avg     0.8389    0.8277    0.8262      4236
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9079    0.7356    0.8127      2118
+      Attack     0.7778    0.9254    0.8452      2118
+
+    accuracy                         0.8305      4236
+   macro avg     0.8429    0.8305    0.8290      4236
+weighted avg     0.8429    0.8305    0.8290      4236
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8997    0.7413    0.8128      2118
+      Attack     0.7800    0.9174    0.8431      2118
+
+    accuracy                         0.8293      4236
+   macro avg     0.8399    0.8293    0.8280      4236
+weighted avg     0.8399    0.8293    0.8280      4236
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.9069    0.7356    0.8123      2118
+      Attack     0.7776    0.9245    0.8447      2118
+
+    accuracy                         0.8300      4236
+   macro avg     0.8422    0.8300    0.8285      4236
+weighted avg     0.8422    0.8300    0.8285      4236
+
+
+
+===== Running for N = 400 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8274    0.7696    0.7975      2118
+      Attack     0.7846    0.8395    0.8111      2118
+
+    accuracy                         0.8045      4236
+   macro avg     0.8060    0.8045    0.8043      4236
+weighted avg     0.8060    0.8045    0.8043      4236
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8891    0.7384    0.8068      2118
+      Attack     0.7763    0.9079    0.8370      2118
+
+    accuracy                         0.8232      4236
+   macro avg     0.8327    0.8232    0.8219      4236
+weighted avg     0.8327    0.8232    0.8219      4236
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.7680    0.5548    0.6442      2118
+      Attack     0.6515    0.8324    0.7309      2118
+
+    accuracy                         0.6936      4236
+   macro avg     0.7097    0.6936    0.6876      4236
+weighted avg     0.7097    0.6936    0.6876      4236
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.9006    0.7441    0.8149      2118
+      Attack     0.7820    0.9178    0.8445      2118
+
+    accuracy                         0.8310      4236
+   macro avg     0.8413    0.8310    0.8297      4236
+weighted avg     0.8413    0.8310    0.8297      4236
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8974    0.7554    0.8203      2118
+      Attack     0.7888    0.9136    0.8466      2118
+
+    accuracy                         0.8345      4236
+   macro avg     0.8431    0.8345    0.8335      4236
+weighted avg     0.8431    0.8345    0.8335      4236
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8907    0.7583    0.8192      2118
+      Attack     0.7896    0.9070    0.8442      2118
+
+    accuracy                         0.8326      4236
+   macro avg     0.8401    0.8326    0.8317      4236
+weighted avg     0.8401    0.8326    0.8317      4236
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8991    0.7531    0.8196      2118
+      Attack     0.7876    0.9155    0.8467      2118
+
+    accuracy                         0.8343      4236
+   macro avg     0.8433    0.8343    0.8332      4236
+weighted avg     0.8433    0.8343    0.8332      4236
+
+
+
+===== Running for N = 500 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.7928    0.7984    0.7956      2118
+      Attack     0.7970    0.7913    0.7941      2118
+
+    accuracy                         0.7949      4236
+   macro avg     0.7949    0.7949    0.7949      4236
+weighted avg     0.7949    0.7949    0.7949      4236
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8802    0.7668    0.8196      2118
+      Attack     0.7934    0.8957    0.8414      2118
+
+    accuracy                         0.8312      4236
+   macro avg     0.8368    0.8312    0.8305      4236
+weighted avg     0.8368    0.8312    0.8305      4236
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8494    0.5274    0.6507      2118
+      Attack     0.6573    0.9065    0.7621      2118
+
+    accuracy                         0.7169      4236
+   macro avg     0.7534    0.7169    0.7064      4236
+weighted avg     0.7534    0.7169    0.7064      4236
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8978    0.7677    0.8277      2118
+      Attack     0.7971    0.9127    0.8510      2118
+
+    accuracy                         0.8402      4236
+   macro avg     0.8475    0.8402    0.8393      4236
+weighted avg     0.8475    0.8402    0.8393      4236
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8986    0.7701    0.8294      2118
+      Attack     0.7988    0.9131    0.8522      2118
+
+    accuracy                         0.8416      4236
+   macro avg     0.8487    0.8416    0.8408      4236
+weighted avg     0.8487    0.8416    0.8408      4236
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8914    0.7715    0.8271      2118
+      Attack     0.7986    0.9060    0.8489      2118
+
+    accuracy                         0.8388      4236
+   macro avg     0.8450    0.8388    0.8380      4236
+weighted avg     0.8450    0.8388    0.8380      4236
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8986    0.7696    0.8291      2118
+      Attack     0.7985    0.9131    0.8520      2118
+
+    accuracy                         0.8414      4236
+   macro avg     0.8485    0.8414    0.8405      4236
+weighted avg     0.8485    0.8414    0.8405      4236
+
+
+## OUTPUT WITHOUT FEATURE SELECTION
+===== Running for N = 100 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8009    0.7759    0.7882      2182
+      Attack     0.7827    0.8071    0.7947      2182
+
+    accuracy                         0.7915      4364
+   macro avg     0.7918    0.7915    0.7914      4364
+weighted avg     0.7918    0.7915    0.7914      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8688    0.7314    0.7942      2182
+      Attack     0.7681    0.8896    0.8244      2182
+
+    accuracy                         0.8105      4364
+   macro avg     0.8185    0.8105    0.8093      4364
+weighted avg     0.8185    0.8105    0.8093      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8205    0.6283    0.7117      2182
+      Attack     0.6988    0.8625    0.7721      2182
+
+    accuracy                         0.7454      4364
+   macro avg     0.7597    0.7454    0.7419      4364
+weighted avg     0.7597    0.7454    0.7419      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8731    0.7379    0.7998      2182
+      Attack     0.7730    0.8928    0.8286      2182
+
+    accuracy                         0.8153      4364
+   macro avg     0.8231    0.8153    0.8142      4364
+weighted avg     0.8231    0.8153    0.8142      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8823    0.7351    0.8020      2182
+      Attack     0.7730    0.9019    0.8325      2182
+
+    accuracy                         0.8185      4364
+   macro avg     0.8276    0.8185    0.8172      4364
+weighted avg     0.8276    0.8185    0.8172      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8706    0.7397    0.7998      2182
+      Attack     0.7737    0.8900    0.8278      2182
+
+    accuracy                         0.8148      4364
+   macro avg     0.8221    0.8148    0.8138      4364
+weighted avg     0.8221    0.8148    0.8138      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8795    0.7360    0.8014      2182
+      Attack     0.7730    0.8992    0.8314      2182
+
+    accuracy                         0.8176      4364
+   macro avg     0.8263    0.8176    0.8164      4364
+weighted avg     0.8263    0.8176    0.8164      4364
+
+
+
+===== Running for N = 200 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8071    0.8167    0.8118      2182
+      Attack     0.8145    0.8048    0.8096      2182
+
+    accuracy                         0.8107      4364
+   macro avg     0.8108    0.8107    0.8107      4364
+weighted avg     0.8108    0.8107    0.8107      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8810    0.7667    0.8199      2182
+      Attack     0.7935    0.8964    0.8418      2182
+
+    accuracy                         0.8316      4364
+   macro avg     0.8372    0.8316    0.8309      4364
+weighted avg     0.8372    0.8316    0.8309      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.7859    0.6476    0.7101      2182
+      Attack     0.7003    0.8236    0.7570      2182
+
+    accuracy                         0.7356      4364
+   macro avg     0.7431    0.7356    0.7335      4364
+weighted avg     0.7431    0.7356    0.7335      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8914    0.7713    0.8270      2182
+      Attack     0.7985    0.9060    0.8489      2182
+
+    accuracy                         0.8387      4364
+   macro avg     0.8449    0.8387    0.8379      4364
+weighted avg     0.8449    0.8387    0.8379      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9013    0.7699    0.8304      2182
+      Attack     0.7992    0.9157    0.8535      2182
+
+    accuracy                         0.8428      4364
+   macro avg     0.8502    0.8428    0.8420      4364
+weighted avg     0.8502    0.8428    0.8420      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8904    0.7745    0.8284      2182
+      Attack     0.8005    0.9047    0.8494      2182
+
+    accuracy                         0.8396      4364
+   macro avg     0.8454    0.8396    0.8389      4364
+weighted avg     0.8454    0.8396    0.8389      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8986    0.7713    0.8301      2182
+      Attack     0.7997    0.9129    0.8526      2182
+
+    accuracy                         0.8421      4364
+   macro avg     0.8491    0.8421    0.8413      4364
+weighted avg     0.8491    0.8421    0.8413      4364
+
+
+
+===== Running for N = 300 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8497    0.7929    0.8203      2182
+      Attack     0.8058    0.8598    0.8319      2182
+
+    accuracy                         0.8263      4364
+   macro avg     0.8278    0.8263    0.8261      4364
+weighted avg     0.8278    0.8263    0.8261      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8791    0.7768    0.8248      2182
+      Attack     0.8001    0.8932    0.8441      2182
+
+    accuracy                         0.8350      4364
+   macro avg     0.8396    0.8350    0.8345      4364
+weighted avg     0.8396    0.8350    0.8345      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.7987    0.6563    0.7205      2182
+      Attack     0.7083    0.8346    0.7663      2182
+
+    accuracy                         0.7454      4364
+   macro avg     0.7535    0.7454    0.7434      4364
+weighted avg     0.7535    0.7454    0.7434      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8927    0.7855    0.8357      2182
+      Attack     0.8085    0.9056    0.8543      2182
+
+    accuracy                         0.8456      4364
+   macro avg     0.8506    0.8456    0.8450      4364
+weighted avg     0.8506    0.8456    0.8450      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8984    0.7860    0.8384      2182
+      Attack     0.8098    0.9111    0.8575      2182
+
+    accuracy                         0.8485      4364
+   macro avg     0.8541    0.8485    0.8479      4364
+weighted avg     0.8541    0.8485    0.8479      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8893    0.7883    0.8358      2182
+      Attack     0.8099    0.9019    0.8534      2182
+
+    accuracy                         0.8451      4364
+   macro avg     0.8496    0.8451    0.8446      4364
+weighted avg     0.8496    0.8451    0.8446      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8999    0.7832    0.8375      2182
+      Attack     0.8081    0.9129    0.8573      2182
+
+    accuracy                         0.8481      4364
+   macro avg     0.8540    0.8481    0.8474      4364
+weighted avg     0.8540    0.8481    0.8474      4364
+
+
+
+===== Running for N = 400 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8476    0.8002    0.8232      2182
+      Attack     0.8108    0.8561    0.8328      2182
+
+    accuracy                         0.8281      4364
+   macro avg     0.8292    0.8281    0.8280      4364
+weighted avg     0.8292    0.8281    0.8280      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8837    0.7764    0.8265      2182
+      Attack     0.8006    0.8978    0.8464      2182
+
+    accuracy                         0.8371      4364
+   macro avg     0.8421    0.8371    0.8365      4364
+weighted avg     0.8421    0.8371    0.8365      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.7666    0.6471    0.7018      2182
+      Attack     0.6947    0.8029    0.7449      2182
+
+    accuracy                         0.7250      4364
+   macro avg     0.7306    0.7250    0.7233      4364
+weighted avg     0.7306    0.7250    0.7233      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8932    0.7823    0.8341      2182
+      Attack     0.8064    0.9065    0.8535      2182
+
+    accuracy                         0.8444      4364
+   macro avg     0.8498    0.8444    0.8438      4364
+weighted avg     0.8498    0.8444    0.8438      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9099    0.7731    0.8360      2182
+      Attack     0.8028    0.9235    0.8589      2182
+
+    accuracy                         0.8483      4364
+   macro avg     0.8564    0.8483    0.8474      4364
+weighted avg     0.8564    0.8483    0.8474      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8883    0.7874    0.8348      2182
+      Attack     0.8091    0.9010    0.8526      2182
+
+    accuracy                         0.8442      4364
+   macro avg     0.8487    0.8442    0.8437      4364
+weighted avg     0.8487    0.8442    0.8437      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.9041    0.7773    0.8359      2182
+      Attack     0.8047    0.9175    0.8574      2182
+
+    accuracy                         0.8474      4364
+   macro avg     0.8544    0.8474    0.8466      4364
+weighted avg     0.8544    0.8474    0.8466      4364
+
+
+
+===== Running for N = 500 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8286    0.8217    0.8251      2182
+      Attack     0.8232    0.8300    0.8266      2182
+
+    accuracy                         0.8258      4364
+   macro avg     0.8259    0.8258    0.8258      4364
+weighted avg     0.8259    0.8258    0.8258      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8777    0.7892    0.8311      2182
+      Attack     0.8085    0.8900    0.8473      2182
+
+    accuracy                         0.8396      4364
+   macro avg     0.8431    0.8396    0.8392      4364
+weighted avg     0.8431    0.8396    0.8392      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8408    0.6219    0.7150      2182
+      Attack     0.7000    0.8822    0.7806      2182
+
+    accuracy                         0.7521      4364
+   macro avg     0.7704    0.7521    0.7478      4364
+weighted avg     0.7704    0.7521    0.7478      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8896    0.7938    0.8389      2182
+      Attack     0.8138    0.9015    0.8554      2182
+
+    accuracy                         0.8476      4364
+   macro avg     0.8517    0.8476    0.8472      4364
+weighted avg     0.8517    0.8476    0.8472      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9004    0.7915    0.8424      2182
+      Attack     0.8140    0.9125    0.8604      2182
+
+    accuracy                         0.8520      4364
+   macro avg     0.8572    0.8520    0.8514      4364
+weighted avg     0.8572    0.8520    0.8514      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8896    0.7979    0.8413      2182
+      Attack     0.8168    0.9010    0.8568      2182
+
+    accuracy                         0.8495      4364
+   macro avg     0.8532    0.8495    0.8490      4364
+weighted avg     0.8532    0.8495    0.8490      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8993    0.7901    0.8412      2182
+      Attack     0.8128    0.9115    0.8594      2182
+
+    accuracy                         0.8508      4364
+   macro avg     0.8561    0.8508    0.8503      4364
+weighted avg     0.8561    0.8508    0.8503      4364
+
+
+
+===== Running for N = 600 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8355    0.8075    0.8213      2182
+      Attack     0.8137    0.8410    0.8271      2182
+
+    accuracy                         0.8242      4364
+   macro avg     0.8246    0.8242    0.8242      4364
+weighted avg     0.8246    0.8242    0.8242      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8816    0.7951    0.8361      2182
+      Attack     0.8134    0.8932    0.8515      2182
+
+    accuracy                         0.8442      4364
+   macro avg     0.8475    0.8442    0.8438      4364
+weighted avg     0.8475    0.8442    0.8438      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8325    0.6219    0.7120      2182
+      Attack     0.6982    0.8749    0.7766      2182
+
+    accuracy                         0.7484      4364
+   macro avg     0.7654    0.7484    0.7443      4364
+weighted avg     0.7654    0.7484    0.7443      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8915    0.7942    0.8400      2182
+      Attack     0.8145    0.9033    0.8566      2182
+
+    accuracy                         0.8488      4364
+   macro avg     0.8530    0.8488    0.8483      4364
+weighted avg     0.8530    0.8488    0.8483      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9036    0.7947    0.8456      2182
+      Attack     0.8168    0.9152    0.8632      2182
+
+    accuracy                         0.8549      4364
+   macro avg     0.8602    0.8549    0.8544      4364
+weighted avg     0.8602    0.8549    0.8544      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8893    0.7988    0.8416      2182
+      Attack     0.8174    0.9005    0.8570      2182
+
+    accuracy                         0.8497      4364
+   macro avg     0.8533    0.8497    0.8493      4364
+weighted avg     0.8533    0.8497    0.8493      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.9001    0.7965    0.8451      2182
+      Attack     0.8175    0.9115    0.8620      2182
+
+    accuracy                         0.8540      4364
+   macro avg     0.8588    0.8540    0.8535      4364
+weighted avg     0.8588    0.8540    0.8535      4364
+
+
+
+===== Running for N = 700 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8613    0.7741    0.8154      2182
+      Attack     0.7948    0.8753    0.8332      2182
+
+    accuracy                         0.8247      4364
+   macro avg     0.8281    0.8247    0.8243      4364
+weighted avg     0.8281    0.8247    0.8243      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8817    0.7924    0.8347      2182
+      Attack     0.8115    0.8937    0.8506      2182
+
+    accuracy                         0.8430      4364
+   macro avg     0.8466    0.8430    0.8426      4364
+weighted avg     0.8466    0.8430    0.8426      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8067    0.6329    0.7093      2182
+      Attack     0.6980    0.8483    0.7658      2182
+
+    accuracy                         0.7406      4364
+   macro avg     0.7523    0.7406    0.7376      4364
+weighted avg     0.7523    0.7406    0.7376      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8916    0.7993    0.8429      2182
+      Attack     0.8181    0.9028    0.8584      2182
+
+    accuracy                         0.8511      4364
+   macro avg     0.8549    0.8511    0.8507      4364
+weighted avg     0.8549    0.8511    0.8507      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8989    0.8025    0.8479      2182
+      Attack     0.8216    0.9097    0.8634      2182
+
+    accuracy                         0.8561      4364
+   macro avg     0.8602    0.8561    0.8557      4364
+weighted avg     0.8602    0.8561    0.8557      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8920    0.8025    0.8449      2182
+      Attack     0.8205    0.9028    0.8597      2182
+
+    accuracy                         0.8527      4364
+   macro avg     0.8562    0.8527    0.8523      4364
+weighted avg     0.8562    0.8527    0.8523      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8984    0.8020    0.8475      2182
+      Attack     0.8212    0.9093    0.8630      2182
+
+    accuracy                         0.8556      4364
+   macro avg     0.8598    0.8556    0.8552      4364
+weighted avg     0.8598    0.8556    0.8552      4364
+
+
+
+===== Running for N = 800 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8413    0.8213    0.8312      2182
+      Attack     0.8254    0.8451    0.8351      2182
+
+    accuracy                         0.8332      4364
+   macro avg     0.8334    0.8332    0.8332      4364
+weighted avg     0.8334    0.8332    0.8332      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8856    0.7984    0.8397      2182
+      Attack     0.8164    0.8969    0.8548      2182
+
+    accuracy                         0.8476      4364
+   macro avg     0.8510    0.8476    0.8472      4364
+weighted avg     0.8510    0.8476    0.8472      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8055    0.6398    0.7132      2182
+      Attack     0.7013    0.8456    0.7667      2182
+
+    accuracy                         0.7427      4364
+   macro avg     0.7534    0.7427    0.7399      4364
+weighted avg     0.7534    0.7427    0.7399      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8922    0.8038    0.8457      2182
+      Attack     0.8215    0.9028    0.8603      2182
+
+    accuracy                         0.8533      4364
+   macro avg     0.8568    0.8533    0.8530      4364
+weighted avg     0.8568    0.8533    0.8530      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9064    0.8029    0.8515      2182
+      Attack     0.8231    0.9170    0.8675      2182
+
+    accuracy                         0.8600      4364
+   macro avg     0.8647    0.8600    0.8595      4364
+weighted avg     0.8647    0.8600    0.8595      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8892    0.8093    0.8474      2182
+      Attack     0.8251    0.8992    0.8605      2182
+
+    accuracy                         0.8543      4364
+   macro avg     0.8571    0.8543    0.8540      4364
+weighted avg     0.8571    0.8543    0.8540      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.9046    0.8038    0.8512      2182
+      Attack     0.8235    0.9152    0.8669      2182
+
+    accuracy                         0.8595      4364
+   macro avg     0.8640    0.8595    0.8591      4364
+weighted avg     0.8640    0.8595    0.8591      4364
+
+
+
+===== Running for N = 900 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8396    0.7988    0.8187      2182
+      Attack     0.8081    0.8474    0.8273      2182
+
+    accuracy                         0.8231      4364
+   macro avg     0.8239    0.8231    0.8230      4364
+weighted avg     0.8239    0.8231    0.8230      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8779    0.8006    0.8375      2182
+      Attack     0.8168    0.8886    0.8512      2182
+
+    accuracy                         0.8446      4364
+   macro avg     0.8473    0.8446    0.8443      4364
+weighted avg     0.8473    0.8446    0.8443      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8058    0.6467    0.7175      2182
+      Attack     0.7049    0.8442    0.7683      2182
+
+    accuracy                         0.7454      4364
+   macro avg     0.7554    0.7454    0.7429      4364
+weighted avg     0.7554    0.7454    0.7429      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8919    0.8057    0.8466      2182
+      Attack     0.8228    0.9024    0.8608      2182
+
+    accuracy                         0.8540      4364
+   macro avg     0.8574    0.8540    0.8537      4364
+weighted avg     0.8574    0.8540    0.8537      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8971    0.8075    0.8500      2182
+      Attack     0.8250    0.9074    0.8643      2182
+
+    accuracy                         0.8575      4364
+   macro avg     0.8611    0.8575    0.8571      4364
+weighted avg     0.8611    0.8575    0.8571      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8886    0.8116    0.8484      2182
+      Attack     0.8267    0.8983    0.8610      2182
+
+    accuracy                         0.8549      4364
+   macro avg     0.8576    0.8549    0.8547      4364
+weighted avg     0.8576    0.8549    0.8547      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.8949    0.8080    0.8492      2182
+      Attack     0.8250    0.9051    0.8632      2182
+
+    accuracy                         0.8566      4364
+   macro avg     0.8600    0.8566    0.8562      4364
+weighted avg     0.8600    0.8566    0.8562      4364
+
+
+
+===== Running for N = 1000 system calls =====
+
+
+===== BASE MODEL RESULTS =====
+
+=== Base Model: KNN ===
+              precision    recall  f1-score   support
+
+      Normal     0.8658    0.7984    0.8307      2182
+      Attack     0.8129    0.8763    0.8434      2182
+
+    accuracy                         0.8373      4364
+   macro avg     0.8394    0.8373    0.8371      4364
+weighted avg     0.8394    0.8373    0.8371      4364
+
+
+=== Base Model: DT ===
+              precision    recall  f1-score   support
+
+      Normal     0.8756    0.7970    0.8345      2182
+      Attack     0.8137    0.8868    0.8487      2182
+
+    accuracy                         0.8419      4364
+   macro avg     0.8447    0.8419    0.8416      4364
+weighted avg     0.8447    0.8419    0.8416      4364
+
+
+=== Base Model: LR ===
+              precision    recall  f1-score   support
+
+      Normal     0.8102    0.6572    0.7257      2182
+      Attack     0.7116    0.8460    0.7730      2182
+
+    accuracy                         0.7516      4364
+   macro avg     0.7609    0.7516    0.7494      4364
+weighted avg     0.7609    0.7516    0.7494      4364
+
+
+=== Base Model: RF ===
+              precision    recall  f1-score   support
+
+      Normal     0.8931    0.8038    0.8461      2182
+      Attack     0.8217    0.9038    0.8608      2182
+
+    accuracy                         0.8538      4364
+   macro avg     0.8574    0.8538    0.8534      4364
+weighted avg     0.8574    0.8538    0.8534      4364
+
+
+
+===== STACKING META MODEL RESULTS =====
+
+=== Meta Model: XGBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.9090    0.8016    0.8519      2182
+      Attack     0.8225    0.9198    0.8685      2182
+
+    accuracy                         0.8607      4364
+   macro avg     0.8658    0.8607    0.8602      4364
+weighted avg     0.8658    0.8607    0.8602      4364
+
+
+=== Meta Model: AdaBoost ===
+              precision    recall  f1-score   support
+
+      Normal     0.8833    0.8153    0.8480      2182
+      Attack     0.8285    0.8923    0.8592      2182
+
+    accuracy                         0.8538      4364
+   macro avg     0.8559    0.8538    0.8536      4364
+weighted avg     0.8559    0.8538    0.8536      4364
+
+
+=== Meta Model: LightGBM ===
+              precision    recall  f1-score   support
+
+      Normal     0.9073    0.8025    0.8517      2182
+      Attack     0.8229    0.9180    0.8679      2182
+
+    accuracy                         0.8602      4364
+   macro avg     0.8651    0.8602    0.8598      4364
+weighted avg     0.8651    0.8602    0.8598      4364

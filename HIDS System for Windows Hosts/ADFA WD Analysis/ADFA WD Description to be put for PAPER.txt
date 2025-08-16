@@ -1,0 +1,37 @@
+so there are 3 folders inside Full_Process_Traces folder
+1.Full_Trace_Attack Data
+2. Full_Trace_Training_Data
+3. Full_Trace_Validation_Data
+
+now, Training Data Folder contains 355 .GHC Files
+named Trainind_Background_(A number).GHC
+
+Same Goes for Validation folder but it contains even the attack names... 1827 folders  eg.
+ Validation-Backdoored-Executable-Part1_1420.GHC
+
+The Scary part is Attack Data Folder
+240 Folders
+V1- V12 names of folders(so like there are 12 attacks)
+Attacks i saw..
+V1. CesarFTP
+V2.WebDAV
+V3.Icecast
+V4 Tomcat
+V5 OS-SMB
+V6 OS-Print-Spool
+V7 PMWiki
+V8 Wireless-Karma
+V9 PDF
+V10 Backdoored-Executable
+V11 Browser Attack 
+V12 Infectious-Media
+now each attack has like either N1-N4 or P1-P4 or S1-S4 followed by number 1-5, so like 5 folders for N1 of V1...and then another 5 folders for N2
+for example,  folder name is like
+V5-OS-SMB-N2-1
+V2-WebDAV-P3-3
+V12-Infectious-Media-S4-5
+Each of these folders....have like 15-30(rough estimate by me, not sure..some have 17, some have 26 so...) .GHC files
+example name: V11-Browser-Attack-N3-5_2444.GHC is a ghc file in V11-Browser-Attack-N3-5 folder
+
+So in other words...WHAT DOES THIS ALL MEAN??? WHAT THE HELL IS GOING ON!!!
+

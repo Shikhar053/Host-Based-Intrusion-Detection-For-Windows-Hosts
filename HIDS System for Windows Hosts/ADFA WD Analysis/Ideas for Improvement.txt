@@ -1,0 +1,8 @@
+Ideas for Improvement
+1. N=600-1000? possibly...if every ghc file is quite big with like 2000+ sequences each
+2.  TWEAKING Removing MI + Feature selection etc.
+3.if you combine training+validation we get 355+1827
+=2182 normal sequences as per paper.. they took 40% or almost 2217 attack sequences... HOW ABOUT...we take EXACTLY 2182 random attack sequence... ie.. number of attack type is exactly = number of normal type 
+4. probably using new models for the dataset 
+training if nothing works
+5. give up or...go full BHAGWAAN BHAROSE
